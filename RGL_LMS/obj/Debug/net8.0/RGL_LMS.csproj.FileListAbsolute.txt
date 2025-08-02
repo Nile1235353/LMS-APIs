@@ -1,0 +1,197 @@
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\appsettings.Development.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\appsettings.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\RGL_LMS.exe
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\RGL_LMS.deps.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\RGL_LMS.runtimeconfig.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\RGL_LMS.pdb
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\AutoMapper.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Azure.Core.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Azure.Identity.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Azure.Storage.Blobs.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Azure.Storage.Common.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Humanizer.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.ClientModel.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.CodeDom.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.IO.Hashing.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Memory.Data.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.AssemblyReference.cache
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.GeneratedMSBuildEditorConfig.editorconfig
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.AssemblyInfoInputs.cache
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.AssemblyInfo.cs
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.CoreCompileInputs.cache
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.MvcApplicationPartsAssemblyInfo.cs
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.MvcApplicationPartsAssemblyInfo.cache
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets.build.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets.development.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.RGL_LMS.Microsoft.AspNetCore.StaticWebAssets.props
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.build.RGL_LMS.props
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RGL_LMS.props
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RGL_LMS.props
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\staticwebassets.pack.json
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\scopedcss\bundle\RGL_LMS.styles.css
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.CopyComplete
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\refint\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.pdb
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\RGL_LMS.genruntimeconfig.cache
+E:\MinePJ\LMS\RGL_LMS\RGL_LMS\obj\Debug\net8.0\ref\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\appsettings.Development.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\appsettings.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\RGL_LMS.exe
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\RGL_LMS.deps.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\RGL_LMS.runtimeconfig.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\RGL_LMS.pdb
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\AutoMapper.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Azure.Core.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Azure.Identity.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Azure.Storage.Blobs.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Azure.Storage.Common.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Humanizer.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Bcl.Cryptography.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.OpenApi.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Mono.TextTemplating.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.ClientModel.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.CodeDom.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Composition.Convention.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Composition.Hosting.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Composition.Runtime.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Composition.TypedParts.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.IO.Hashing.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Memory.Data.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.AssemblyReference.cache
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.GeneratedMSBuildEditorConfig.editorconfig
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.AssemblyInfoInputs.cache
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.AssemblyInfo.cs
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.CoreCompileInputs.cache
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.MvcApplicationPartsAssemblyInfo.cs
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.MvcApplicationPartsAssemblyInfo.cache
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets.build.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets.development.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.RGL_LMS.Microsoft.AspNetCore.StaticWebAssets.props
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.build.RGL_LMS.props
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RGL_LMS.props
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RGL_LMS.props
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets.pack.json
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\scopedcss\bundle\RGL_LMS.styles.css
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.CopyComplete
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\refint\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.pdb
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.genruntimeconfig.cache
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\ref\RGL_LMS.dll
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.sourcelink.json

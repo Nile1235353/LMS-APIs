@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RGL_LMS.props" />
+</Project>
