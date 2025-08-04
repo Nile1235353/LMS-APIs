@@ -91,21 +91,72 @@ namespace RGL_LMS.Service
                     FullName = u.FullName
                 })
                 .ToListAsync();
-        }     
+        }
+        //public async Task<ResponseMessage> CreateCourseAsync(CourseDto dto)
+        //{
+        //    ResponseMessage msg = new() { Status = false };
+
+        //    try
+        //    {
+        //        // Only Admin and Instructor roles are allowed
+        //        if (dto.Role != UserRole.Admin && dto.Role != UserRole.Instructor)
+        //        {
+        //            msg.MessageContent = "Only Admin and Instructor roles are allowed.";
+        //            return msg;
+        //        }
+
+        //        // Get user info by role & userId
+        //        var user = await _context.User
+        //            .FirstOrDefaultAsync(u => u.UserId == dto.UserId && u.Role == dto.Role.ToString());
+
+        //        if (user == null)
+        //        {
+        //            msg.MessageContent = $"{dto.Role} with specified UserId not found.";
+        //            return msg;
+        //        }
+        //        // ✅ Check if Course already exists with same UserId
+        //        var exists = await _context.Courses.AnyAsync(c => c.UserId == dto.UserId);
+        //        if (exists)
+        //        {
+        //            msg.MessageContent = "A course already exists with the specified UserId.";
+        //            return msg;
+        //        }
+
+        //        int count = await _context.Courses.CountAsync();
+        //        string courseId = $"C-{(count + 1):D4}";
+
+        //        var course = _mapper.Map<Courses>(dto);
+        //        course.CourseId = courseId;
+        //        course.Role = user.Role;
+        //        course.Name = user.FullName;
+        //        course.CreatedDate = GetLocalStdDT();
+        //        course.IsActive = true;
+
+        //        _context.Courses.Add(course);
+        //        await _context.SaveChangesAsync();
+
+        //        msg.Status = true;
+        //        msg.MessageContent = "Course created successfully!";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        msg.MessageContent = ex.InnerException?.Message ?? ex.Message;
+        //    }
+
+        //    return msg;
+        //}
         public async Task<ResponseMessage> CreateCourseAsync(CourseDto dto)
         {
             ResponseMessage msg = new() { Status = false };
 
             try
             {
-                // Only Admin and Instructor roles are allowed
                 if (dto.Role != UserRole.Admin && dto.Role != UserRole.Instructor)
                 {
                     msg.MessageContent = "Only Admin and Instructor roles are allowed.";
                     return msg;
                 }
 
-                // Get user info by role & userId
                 var user = await _context.User
                     .FirstOrDefaultAsync(u => u.UserId == dto.UserId && u.Role == dto.Role.ToString());
 
@@ -114,7 +165,7 @@ namespace RGL_LMS.Service
                     msg.MessageContent = $"{dto.Role} with specified UserId not found.";
                     return msg;
                 }
-                // ✅ Check if Course already exists with same UserId
+
                 var exists = await _context.Courses.AnyAsync(c => c.UserId == dto.UserId);
                 if (exists)
                 {
@@ -122,8 +173,19 @@ namespace RGL_LMS.Service
                     return msg;
                 }
 
-                int count = await _context.Courses.CountAsync();
-                string courseId = $"C-{(count + 1):D4}";
+                // ✅ Get highest existing CourseId number (C-XXXX)
+                var lastCourse = await _context.Courses
+                    .OrderByDescending(c => c.CourseId)
+                    .FirstOrDefaultAsync();
+
+                int lastNumber = 0;
+
+                if (lastCourse != null && lastCourse.CourseId.StartsWith("C-"))
+                {
+                    int.TryParse(lastCourse.CourseId.Substring(2), out lastNumber);
+                }
+
+                string courseId = $"C-{(lastNumber + 1):D4}";
 
                 var course = _mapper.Map<Courses>(dto);
                 course.CourseId = courseId;
@@ -145,6 +207,7 @@ namespace RGL_LMS.Service
 
             return msg;
         }
+
 
         public async Task<ResponseMessage> UpdateCourse([FromForm] CourseDto info)
         {
@@ -192,7 +255,7 @@ namespace RGL_LMS.Service
             try
             {
                 Courses data = await _context.Courses
-                    .FromSqlRaw("SELECT * FROM [Courses] WHERE CourseId = @id", new SqlParameter("@id", id))
+                    .FromSqlRaw("SELECT * FROM [Courses] WHERE Id = @id", new SqlParameter("@id", id))
                     .SingleOrDefaultAsync();
 
                 if (data == null)
@@ -213,6 +276,33 @@ namespace RGL_LMS.Service
             }
             return msg;
         }
+        //public async Task<ResponseMessage> DeleteCourse(int id)
+        //{
+        //    ResponseMessage msg = new ResponseMessage { Status = false };
+
+        //    try
+        //    {
+        //        var data = await _context.Courses.FirstOrDefaultAsync(c => c.Id == id);
+
+        //        if (data == null)
+        //        {
+        //            msg.MessageContent = "Data not found.";
+        //            return msg;
+        //        }
+
+        //        _context.Courses.Remove(data);
+        //        await _context.SaveChangesAsync();
+
+        //        msg.Status = true;
+        //        msg.MessageContent = "Successfully deleted!";
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        msg.MessageContent = ex.InnerException?.Message ?? ex.Message;
+        //    }
+
+        //    return msg;
+        //}
 
         //public async Task<List<CourseDto>> GetAllCoursesAsync()
         //{

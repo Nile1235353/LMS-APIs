@@ -180,6 +180,7 @@ E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.AssemblyInfo.cs
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.csproj.CoreCompileInputs.cache
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.MvcApplicationPartsAssemblyInfo.cs
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.MvcApplicationPartsAssemblyInfo.cache
+E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.sourcelink.json
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets.build.json
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets.development.json
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\staticwebassets\msbuild.RGL_LMS.Microsoft.AspNetCore.StaticWebAssets.props
@@ -194,4 +195,3 @@ E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\refint\RGL_LMS.dll
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.pdb
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.genruntimeconfig.cache
 E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\ref\RGL_LMS.dll
-E:\MinePJ\LMS\RGL_LMS API\RGL_LMS\obj\Debug\net8.0\RGL_LMS.sourcelink.json

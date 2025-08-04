@@ -52,7 +52,6 @@ namespace RGL_LMS.Controllers
             var result = await _courseDal.UpdateCourse(info);
             return Ok(result);
         }
-     
 
 
 
@@ -62,6 +61,13 @@ namespace RGL_LMS.Controllers
             var result = await _courseDal.DeleteCourse(id);
             return Ok(result);
         }
+
+        //[HttpDelete("{id:int}")]
+        //public async Task<IActionResult> DeleteCourse(int id)
+        //{
+        //    var result = await _courseDal.DeleteCourse(id);
+        //    return Ok(result);
+        //}
 
         //[HttpGet("GetAll")]
         //public async Task<IActionResult> GetAllCourses()
