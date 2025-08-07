@@ -46,18 +46,14 @@ namespace RGL_LMS.Controllers {
             if (result == null) return NotFound("Course not found.");
             return Ok(result);
         }
+       
 
-        //[HttpGet("GetUserById{id}")]
-        //public async Task<IActionResult> GetUserById(string id)
-        //{
-        //    var data = await _dal.GetUserById(id); // ✅ Use _userService (which is injected)
-        //    return Ok(data);
-        //}
+
 
         [HttpGet("GetUserById/{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
-            var data = await _dal.GetUserById(id);  // <- note: use _userService
+            var data = await _dal.GetUserById(id);  
             if (data == null)
                 return NotFound(new { message = "User not found" });
 
@@ -65,20 +61,21 @@ namespace RGL_LMS.Controllers {
         }
 
 
-        [HttpGet("getall")]
-        public async Task<IActionResult> GetAll()
+
+        [HttpGet("GetAllViewCourse")]
+        public async Task<IActionResult> GetAllViewCourseData()
         {
-            var data = await _dal.GetAllAsync();
+            var data = await _dal.GetAllViewCourseAsync();
             return Ok(data);
         }
 
-        [HttpGet("getbyid/{id}")]
-        public async Task<IActionResult> GetById(string id)
-        {
-            var item = await _dal.GetByIdAsync(id);
-            if (item == null) return NotFound("Not found");
-            return Ok(item);
-        }
+        //[HttpGet("getbyid/{id}")]
+        //public async Task<IActionResult> GetById(string id)
+        //{
+        //    var item = await _dal.GetByIdAsync(id);
+        //    if (item == null) return NotFound("Not found");
+        //    return Ok(item);
+        //}
 
         [HttpPost("create")]
         public async Task<IActionResult> Create([FromBody] ViewCourseDto dto)
@@ -87,19 +84,19 @@ namespace RGL_LMS.Controllers {
             return res.Status ? Ok(res) : BadRequest(res);
         }
 
-        [HttpPut("update")]
-        public async Task<IActionResult> Update([FromBody] ViewCourseDto dto)
-        {
-            var res = await _dal.UpdateAsync(dto);
-            return res.Status ? Ok(res) : BadRequest(res);
-        }
+        //[HttpPut("update")]
+        //public async Task<IActionResult> Update([FromBody] ViewCourseDto dto)
+        //{
+        //    var res = await _dal.UpdateAsync(dto);
+        //    return res.Status ? Ok(res) : BadRequest(res);
+        //}
 
-        [HttpDelete("delete/{id}")]
-        public async Task<IActionResult> Delete(string id)
-        {
-            var res = await _dal.DeleteAsync(id);
-            return res.Status ? Ok(res) : BadRequest(res);
-        }
+        //[HttpDelete("delete/{id}")]
+        //public async Task<IActionResult> Delete(string id)
+        //{
+        //    var res = await _dal.DeleteAsync(id);
+        //    return res.Status ? Ok(res) : BadRequest(res);
+        //}
     }
 }
 

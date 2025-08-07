@@ -33,7 +33,26 @@ public class ViewCourseDAL
         _mapper = mapper;
         _logger = logger;
     }
- 
+
+    private string GenerateId()
+    {
+        var last = _context.ViewCourses
+            .OrderByDescending(x => x.ViewCourseId)
+            .Select(x => x.ViewCourseId)
+            .FirstOrDefault();
+
+        int num = 0;
+
+        if (!string.IsNullOrEmpty(last) && last.StartsWith("VC-"))
+        {
+            // Cut after "VC-" → only numbers
+            int.TryParse(last.Substring(3), out num);
+        }
+
+        return "VC-" + (num + 1).ToString("D4");
+    }
+
+
     public async Task<CourseDto> GetCourseById(string courseId)
     {
         var course = await _context.Courses
@@ -51,7 +70,8 @@ public class ViewCourseDAL
 
         return course;
     }
-    
+  
+
     public async Task<UserDto> GetUserById(string id)
     {
         UserDto user = null;
@@ -71,7 +91,9 @@ public class ViewCourseDAL
                     FullName = data.FullName,
                     EmployeeId = data.EmployeeId,
                     Department = data.Department,
-                    PhoneNumber = data.PhoneNumber
+                    PhoneNumber = data.PhoneNumber,
+                    NRC=data.NRC,
+                    Position=data.Position
                 };
             }
         }
@@ -83,14 +105,92 @@ public class ViewCourseDAL
         return user;
     }
 
-    public async Task<List<ViewCourse>> GetAllAsync()
-    {
-        return await _context.ViewCourses.ToListAsync();
-    }
+    //public async Task<List<ViewCourse>> GetAllAsync()
+    //{
+    //    return await _context.ViewCourses.ToListAsync();
+    //}
 
-    public async Task<ViewCourse?> GetByIdAsync(string id)
+    //public async Task<ViewCourse?> GetByIdAsync(string id)
+    //{
+    //    return await _context.ViewCourses.FirstOrDefaultAsync(x => x.ViewCourseId == id);
+    //}
+
+    //public async Task<ResponseMessage> CreateAsync(ViewCourseDto dto)
+    //{
+    //    var res = new ResponseMessage();
+
+    //    try
+    //    {
+    //        if (dto.Status?.ToLower() != "finished")
+    //        {
+    //            res.Status = false;
+    //            res.MessageContent = "Only 'finished' status will be counted.";
+    //            return res;
+    //        }
+
+    //        var existing = await _context.ViewCourses
+    //            .FirstOrDefaultAsync(x => x.CourseId == dto.CourseId && x.UserId == dto.UserId);
+
+    //        if (existing != null)
+    //        {
+    //            existing.ViewCount = (existing.ViewCount ?? 0) + 1;
+    //            existing.Status = dto.Status;
+    //            _context.ViewCourses.Update(existing);
+    //        }
+    //        else
+    //        {
+    //            var view = new ViewCourse
+    //            {
+    //                ViewCourseId = GenerateId(),
+    //                CourseId = dto.CourseId,
+    //                UserId = dto.UserId,
+    //                ViewCount = 1,
+    //                Status = dto.Status,
+    //                Name = dto.Name,
+    //                EmployeeId = dto.EmployeeId,
+    //                PhoneNumber = dto.PhoneNumber,
+    //                Email = dto.Email,
+    //                Department = dto.Department,
+    //                Title = dto.Title,
+    //                Description = dto.Description,
+    //                VideoLink = dto.VideoLink,
+    //                CreatedUser = dto.CreatedUser,
+    //                CreatedDate = DateTime.Now
+    //            };
+
+    //            await _context.ViewCourses.AddAsync(view);
+    //        }
+
+    //        await _context.SaveChangesAsync();
+    //        res.Status = true;
+    //        res.MessageContent = "Saved successfully.";
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        res.Status = false;
+    //        res.MessageContent = ex.Message;
+    //    }
+
+    //    return res;
+    //}
+    public async Task<List<ViewCourseDto>> GetAllViewCourseAsync()
     {
-        return await _context.ViewCourses.FirstOrDefaultAsync(x => x.ViewCourseId == id);
+        List<ViewCourseDto> list = new List<ViewCourseDto>();
+
+        try
+        {
+            var data = await _context.ViewCourses
+                .OrderByDescending(x => x.CreatedDate)
+                .ToListAsync();
+
+            list = _mapper.Map<List<ViewCourseDto>>(data);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error occurred in GetAllAsync()");
+        }
+
+        return list;
     }
 
     public async Task<ResponseMessage> CreateAsync(ViewCourseDto dto)
@@ -119,7 +219,7 @@ public class ViewCourseDAL
             {
                 var view = new ViewCourse
                 {
-                    ViewCourseId = GenerateId(),
+                    ViewCourseId = GenerateId(), // ✅ Here we use the generated ID
                     CourseId = dto.CourseId,
                     UserId = dto.UserId,
                     ViewCount = 1,
@@ -152,87 +252,89 @@ public class ViewCourseDAL
         return res;
     }
 
-    public async Task<ResponseMessage> UpdateAsync(ViewCourseDto dto)
-    {
-        var res = new ResponseMessage();
 
-        try
-        {
-            var existing = await _context.ViewCourses
-                .FirstOrDefaultAsync(x => x.ViewCourseId == dto.ViewId);
 
-            if (existing == null)
-            {
-                res.Status = false;
-                res.MessageContent = "Record not found.";
-                return res;
-            }
+    //public async Task<ResponseMessage> UpdateAsync(ViewCourseDto dto)
+    //{
+    //    var res = new ResponseMessage();
 
-            existing.CourseId = dto.CourseId;
-            existing.UserId = dto.UserId;
-            existing.Status = dto.Status;
-            existing.Name = dto.Name;
-            existing.EmployeeId = dto.EmployeeId;
-            existing.PhoneNumber = dto.PhoneNumber;
-            existing.Email = dto.Email;
-            existing.Department = dto.Department;
-            existing.Title = dto.Title;
-            existing.Description = dto.Description;
-            existing.VideoLink = dto.VideoLink;
-            existing.CreatedUser = dto.CreatedUser;
+    //    try
+    //    {
+    //        var existing = await _context.ViewCourses
+    //            .FirstOrDefaultAsync(x => x.ViewCourseId == dto.ViewId);
 
-            _context.ViewCourses.Update(existing);
-            await _context.SaveChangesAsync();
+    //        if (existing == null)
+    //        {
+    //            res.Status = false;
+    //            res.MessageContent = "Record not found.";
+    //            return res;
+    //        }
 
-            res.Status = true;
-            res.MessageContent = "Updated successfully.";
-        }
-        catch (Exception ex)
-        {
-            res.Status = false;
-            res.MessageContent = ex.Message;
-        }
+    //        existing.CourseId = dto.CourseId;
+    //        existing.UserId = dto.UserId;
+    //        existing.Status = dto.Status;
+    //        existing.Name = dto.Name;
+    //        existing.EmployeeId = dto.EmployeeId;
+    //        existing.PhoneNumber = dto.PhoneNumber;
+    //        existing.Email = dto.Email;
+    //        existing.Department = dto.Department;
+    //        existing.Title = dto.Title;
+    //        existing.Description = dto.Description;
+    //        existing.VideoLink = dto.VideoLink;
+    //        existing.CreatedUser = dto.CreatedUser;
 
-        return res;
-    }
+    //        _context.ViewCourses.Update(existing);
+    //        await _context.SaveChangesAsync();
 
-    public async Task<ResponseMessage> DeleteAsync(string id)
-    {
-        var res = new ResponseMessage();
+    //        res.Status = true;
+    //        res.MessageContent = "Updated successfully.";
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        res.Status = false;
+    //        res.MessageContent = ex.Message;
+    //    }
 
-        try
-        {
-            var existing = await _context.ViewCourses.FirstOrDefaultAsync(x => x.ViewCourseId == id);
-            if (existing == null)
-            {
-                res.Status = false;
-                res.MessageContent = "Record not found.";
-                return res;
-            }
+    //    return res;
+    //}
 
-            _context.ViewCourses.Remove(existing);
-            await _context.SaveChangesAsync();
+    //public async Task<ResponseMessage> DeleteAsync(string id)
+    //{
+    //    var res = new ResponseMessage();
 
-            res.Status = true;
-            res.MessageContent = "Deleted successfully.";
-        }
-        catch (Exception ex)
-        {
-            res.Status = false;
-            res.MessageContent = ex.Message;
-        }
+    //    try
+    //    {
+    //        var existing = await _context.ViewCourses.FirstOrDefaultAsync(x => x.ViewCourseId == id);
+    //        if (existing == null)
+    //        {
+    //            res.Status = false;
+    //            res.MessageContent = "Record not found.";
+    //            return res;
+    //        }
 
-        return res;
-    }
+    //        _context.ViewCourses.Remove(existing);
+    //        await _context.SaveChangesAsync();
 
-    private string GenerateId()
-    {
-        var last = _context.ViewCourses.OrderByDescending(x => x.ViewCourseId).FirstOrDefault();
-        int num = 0;
+    //        res.Status = true;
+    //        res.MessageContent = "Deleted successfully.";
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        res.Status = false;
+    //        res.MessageContent = ex.Message;
+    //    }
 
-        if (last != null && last.ViewCourseId.Length > 2)
-            int.TryParse(last.ViewCourseId.Substring(2), out num);
+    //    return res;
+    //}
 
-        return "VC" + (num + 1).ToString("D4");
-    }
+    //private string GenerateId()
+    //{
+    //    var last = _context.ViewCourses.OrderByDescending(x => x.ViewCourseId).FirstOrDefault();
+    //    int num = 0;
+
+    //    if (last != null && last.ViewCourseId.Length > 2)
+    //        int.TryParse(last.ViewCourseId.Substring(2), out num);
+
+    //    return "VC" + (num + 1).ToString("D4");
+    //}
 }

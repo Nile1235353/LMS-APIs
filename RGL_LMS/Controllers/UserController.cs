@@ -44,7 +44,7 @@ namespace RGL_LMS.Controllers
         {
             try
             {
-                var userList = await _queryDAL.GetUserList();  // _queryDAL ကို သုံးပါ
+                var userList = await _queryDAL.GetUserList(); 
                 return Ok(userList);
             }
             catch (Exception ex)
