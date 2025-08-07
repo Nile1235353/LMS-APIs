@@ -3,12 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RGL_LMS.Models
 {
-    //public enum UserRole
-    //{
-    //    Admin,
-    //    Instructor,
-    //    Learner
-    //}
     public enum UserRole
     {
         Admin = 0,

@@ -7,6 +7,7 @@ using RGL_LMS.Service;
 using System.Text;
 using AutoMapper;
 using RGL_LMS;
+//using RGL_LMS.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -68,6 +69,7 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 // Register your DAL/service classes
 builder.Services.AddScoped<UserDAl>();
 builder.Services.AddScoped<CourseDAL>();
+builder.Services.AddScoped<ViewCourseDAL>();
 
 // Add Controllers and Swagger
 builder.Services.AddControllers();

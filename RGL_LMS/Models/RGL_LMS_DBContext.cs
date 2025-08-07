@@ -22,7 +22,9 @@ namespace RGL_LMS.Models
       
         public DbSet<Users> User { get; set; }
         public DbSet<Courses> Courses { get; set; }
-       
+        public DbSet<ViewCourse> ViewCourses { get; set; }
+
+
 
     }
 }

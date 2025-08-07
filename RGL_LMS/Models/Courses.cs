@@ -7,8 +7,6 @@ namespace RGL_LMS.Models
     public class Courses
     {
         [Key]
-        //[Column(TypeName = "int")]
-        //public int? Id { get; set; }
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

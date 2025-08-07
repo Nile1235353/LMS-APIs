@@ -15,7 +15,6 @@ namespace RGL_LMS.Service
         private readonly IMapper _mapper;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly ILogger<UserDAl> _logger;
-
         string _conStr;
         public UserDAl(IConfiguration config, RGL_LMS_DBContext context, IMapper mapper, IWebHostEnvironment webHostEnvironment, ILogger<UserDAl> logger)
         {
@@ -129,41 +128,7 @@ namespace RGL_LMS.Service
             return user;
         }
 
-        //public async Task<ResponseMessage> SaveUser([FromForm] UserDto info)
-        //{
-        //    ResponseMessage msg = new() { Status = false };
-        //    try
-        //    {
-        //        var data = await _context.User.OrderByDescending(v => v.SrNo).FirstOrDefaultAsync();
-        //        if (data != null)
-        //        {
-        //            info.SrNo = data.SrNo + 1;
-        //            info.UserId = $"RGL-{info.SrNo:0000}";
-        //        }
-        //        else
-        //        {
-        //            info.UserId = "RGL-0001";
-        //            info.SrNo = 1;
-        //        }
-
-        //        var user = _mapper.Map<Users>(info);
-        //        user.IsActive = true;
-        //        user.CreatedDate = GetLocalStdDT();
-
-        //        _context.User.Add(user);
-        //        await _context.SaveChangesAsync();
-
-        //        msg.Status = true;
-        //        msg.MessageContent = "Successfully saved!";
-        //    }
-        //    catch (DbUpdateException e)
-        //    {
-        //        _logger.LogError(e, "Error in SaveUser");
-        //        msg.MessageContent = e.Message;
-        //    }
-
-        //    return msg;
-        //}
+       
 
         public async Task<ResponseMessage> SaveUser([FromForm] UserDto info)
         {

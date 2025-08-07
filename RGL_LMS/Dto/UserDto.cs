@@ -23,5 +23,6 @@ namespace RGL_LMS.Dto
         public string? UpdatedUser { get; set; }
         public Boolean? IsActive { get; set; }
        
+
     }
 }

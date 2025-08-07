@@ -222,11 +222,11 @@ namespace RGL_LMS.Migrations
 
             modelBuilder.Entity("RGL_LMS.Models.Courses", b =>
                 {
-                    b.Property<int?>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int?>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CourseId")
                         .HasColumnType("varchar(50)");
@@ -333,6 +333,69 @@ namespace RGL_LMS.Migrations
                     b.ToTable("User");
                 });
 
+            modelBuilder.Entity("RGL_LMS.Models.ViewCourse", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("CourseId")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<int?>("CourseId1")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime?>("CreatedDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("CreatedUser")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Department")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("varchar(1000)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("varchar(150)");
+
+                    b.Property<string>("EmployeeId")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("varchar(100)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("VideoLink")
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<int?>("ViewCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ViewCourseId")
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId1");
+
+                    b.ToTable("ViewCourses");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -382,6 +445,15 @@ namespace RGL_LMS.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("RGL_LMS.Models.ViewCourse", b =>
+                {
+                    b.HasOne("RGL_LMS.Models.Courses", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId1");
+
+                    b.Navigation("Course");
                 });
 #pragma warning restore 612, 618
         }

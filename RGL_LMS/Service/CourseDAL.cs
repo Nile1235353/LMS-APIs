@@ -166,12 +166,12 @@ namespace RGL_LMS.Service
                     return msg;
                 }
 
-                var exists = await _context.Courses.AnyAsync(c => c.UserId == dto.UserId);
-                if (exists)
-                {
-                    msg.MessageContent = "A course already exists with the specified UserId.";
-                    return msg;
-                }
+                //var exists = await _context.Courses.AnyAsync(c => c.UserId == dto.UserId);
+                //if (exists)
+                //{
+                //    msg.MessageContent = "A course already exists with the specified UserId.";
+                //    return msg;
+                //}
 
                 // ✅ Get highest existing CourseId number (C-XXXX)
                 var lastCourse = await _context.Courses

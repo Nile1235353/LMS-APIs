@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using RGL_LMS.Dto;
+using RGL_LMS.DTO;
 using RGL_LMS.Models;
 
 namespace RGL_LMS
@@ -17,6 +18,8 @@ namespace RGL_LMS
     .ForMember(dest => dest.Role, opt => opt.MapFrom(src => src.Role));
 
             CreateMap<Courses, CourseDto>().ReverseMap();
+            CreateMap<ViewCourse, ViewCourseDto>().ReverseMap();
+
 
 
         }

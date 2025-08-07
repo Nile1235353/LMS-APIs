@@ -27,10 +27,8 @@ namespace RGL_LMS.Controllers
         }
 
         
-
         [HttpGet("ping")]
         public IActionResult Get() => Ok("Working");
-
 
 
         [HttpGet("roles")]
@@ -56,7 +54,6 @@ namespace RGL_LMS.Controllers
             }
         }
        
-
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
@@ -81,7 +78,6 @@ namespace RGL_LMS.Controllers
             return Ok(msg);
         }
     
-
         [HttpPut]
         public async Task<IActionResult> UpdateUser([FromForm] UserDto info)
         {

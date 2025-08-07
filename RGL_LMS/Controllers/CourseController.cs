@@ -54,7 +54,6 @@ namespace RGL_LMS.Controllers
         }
 
 
-
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCourse(string id)
         {
