@@ -47,9 +47,6 @@ namespace RGL_LMS.Controllers {
             return Ok(result);
         }
        
-
-
-
         [HttpGet("GetUserById/{id}")]
         public async Task<IActionResult> GetUserById(string id)
         {
@@ -59,7 +56,6 @@ namespace RGL_LMS.Controllers {
 
             return Ok(data);
         }
-
 
 
         [HttpGet("GetAllViewCourse")]

@@ -11,15 +11,13 @@ namespace RGL_LMS.Models
         {
 
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
             // modelBuilder.ApplyConfiguration(new RoleConfiguration());
         }
-
-      
+    
         public DbSet<Users> User { get; set; }
         public DbSet<Courses> Courses { get; set; }
         public DbSet<ViewCourse> ViewCourses { get; set; }

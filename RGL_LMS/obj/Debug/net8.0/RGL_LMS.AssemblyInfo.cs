@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RGL_LMS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e22ceef1f9c19bf4228bc701609c5083b496fda")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1981c9ba5ada285a7106fdaa00b4a5dc3fb4854")]
 [assembly: System.Reflection.AssemblyProductAttribute("RGL_LMS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RGL_LMS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

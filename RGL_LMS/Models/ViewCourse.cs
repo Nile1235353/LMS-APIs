@@ -16,7 +16,7 @@ namespace RGL_LMS.Models
         [Column(TypeName = "varchar(50)")]
         public string? CourseId { get; set; } // FK to Courses.CourseId
 
-        public Courses? Course { get; set; }
+        //public Courses? Course { get; set; }
 
         [Column(TypeName = "int")]
         public int? ViewCount { get; set; } = 0;

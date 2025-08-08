@@ -4,7 +4,7 @@ namespace RGL_LMS.DTO
     public class ViewCourseDto
     {
         public int Id { get; set; }
-        public string? ViewId { get; set; }
+        public string? ViewCourseId { get; set; }
         public int? ViewCount { get; set; } = 0;
         public string? CourseId { get; set; }
         public string? EmployeeId { get; set; }

@@ -344,9 +344,6 @@ namespace RGL_LMS.Migrations
                     b.Property<string>("CourseId")
                         .HasColumnType("varchar(50)");
 
-                    b.Property<int?>("CourseId1")
-                        .HasColumnType("int");
-
                     b.Property<DateTime?>("CreatedDate")
                         .HasColumnType("datetime");
 
@@ -390,8 +387,6 @@ namespace RGL_LMS.Migrations
                         .HasColumnType("varchar(50)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CourseId1");
 
                     b.ToTable("ViewCourses");
                 });
@@ -445,15 +440,6 @@ namespace RGL_LMS.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("RGL_LMS.Models.ViewCourse", b =>
-                {
-                    b.HasOne("RGL_LMS.Models.Courses", "Course")
-                        .WithMany()
-                        .HasForeignKey("CourseId1");
-
-                    b.Navigation("Course");
                 });
 #pragma warning restore 612, 618
         }

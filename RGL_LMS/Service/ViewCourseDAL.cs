@@ -1,11 +1,4 @@
-﻿//namespace RGL_LMS.Service
-//{
-//    public class ViewCourseService
-//    {
-
-//    }
-//}
-
+﻿
 using RGL_LMS.DTO;
 using RGL_LMS.Models;
 using Microsoft.EntityFrameworkCore;
@@ -51,7 +44,6 @@ public class ViewCourseDAL
 
         return "VC-" + (num + 1).ToString("D4");
     }
-
 
     public async Task<CourseDto> GetCourseById(string courseId)
     {
